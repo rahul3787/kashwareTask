@@ -7,7 +7,7 @@
     color: #e5dfd8;
     font-size: 80px;
     content: "Kashware is an exclusive \A  ecosystem unites your money.";
-    white-space: pre; /* or pre-wrap */
+    white-space: pre; 
     padding: 300px 0;
     text-align: center;
     background: url("back1.png");
