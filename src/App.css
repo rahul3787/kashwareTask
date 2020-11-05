@@ -1,38 +1,115 @@
-.App {
-  text-align: center;
+.boxy {
+  width: 300px;
+  background: green;
+
+  margin-left: auto;
+  margin-right: auto;
+  color: black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+@keyframes changeLetter {
+  0% {
+    width: 1500px;
+    height: 1276px;
+    opacity: 1;
+    color: #e5dfd8;
+    font-size: 80px;
+    content: "Kashware is an exclusive \A  ecosystem unites your money.";
+    white-space: pre; /* or pre-wrap */
+    padding: 300px 0;
+    text-align: center;
+    background: url("back1.png");
+    background-repeat: no-repeat;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    background-size: contain;
+  }
+  15% {
+    width: 800px;
+    height: 900px;
+    opacity: 1;
+    content: "";
+    background: url("hero.png");
+    background-repeat: no-repeat;
+
+    background-size: contain;
+  }
+  30% {
+    width: 650px;
+    height: 850px;
+    opacity: 1;
+    content: "";
+    background: url("hero.png");
+    background-repeat: no-repeat;
+
+    background-size: contain;
+  }
+  45% {
+    width: 600px;
+    height: 800px;
+    opacity: 1;
+    content: "";
+  }
+  60% {
+    width: 500px;
+    height: 750px;
+    opacity: 1;
+    background: url("card1.png");
+    background-repeat: no-repeat;
+
+    background-size: contain;
+    content: "";
+  }
+  75% {
+    width: 487px;
+    height: 700px;
+    opacity: 1;
+    content: "";
+  }
+  100% {
+    width: 400px;
+    height: 600px;
+
+    background: url("card1.png");
+    background-repeat: no-repeat;
+
+    background-size: contain;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.element {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+  background: #0e0e0e;
+
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.App-link {
-  color: #61dafb;
+.element::after {
+  animation: changeLetter 6s ease-in-out infinite;
+  animation-iteration-count: 1;
+  display: block;
+  text-align: center;
+  font-size: 40px;
+  padding: 620px 0;
+  content: "One App. One Card.\A For all others.";
+  white-space: pre;
+  width: 700px;
+  height: 600px;
+  background: url("pan.png");
+  background-repeat: no-repeat;
+  transition-duration: 4s;
+  background-size: 700px 600px;
+  color: #e5dfd8;
+  /* font-size: 80px; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body {
+  font-family: Georgia, serif;
+  display: flex;
+  background-color: #0e0e0e;
+  justify-content: center;
+  align-items: center;
 }
